@@ -11,7 +11,7 @@ ENV SECRET_DIRNAME /data
 WORKDIR /usr/src/app
 
 COPY . .
-RUN npm install --production --silent \
+RUN npm install --production=false --silent \
     && npm run build \
     && mkdir -p /data/dbs
 
