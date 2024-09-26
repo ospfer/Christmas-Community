@@ -1,5 +1,5 @@
 # Christmas Community
-![Docker Pulls](https://img.shields.io/docker/pulls/wingysam/christmas-community?style=for-the-badge)
+![Docker Pulls](https://img.shields.io/docker/pulls/ospfer/venanzi-christmas?style=for-the-badge)
 ![Version](https://img.shields.io/badge/dynamic/json?color=orange&label=Version&query=version&url=https%3A%2F%2Fraw.githubusercontent.com%2FWingysam%2FChristmas-Community%2Fmaster%2Fpackage.json&style=for-the-badge)
 ![Language](https://img.shields.io/badge/Language-JavaScript-DDA000?style=for-the-badge)
 ![Runtime](https://img.shields.io/badge/Runtime-Node.JS-68A063?style=for-the-badge)
@@ -23,7 +23,7 @@ If you want put Christmas Community on a subdirectory, such as `/christmas-commu
 
 ## Docker
 ```
-docker run --detach --name christmas-community -p 80:80 --restart always wingysam/christmas-community
+docker run --detach --name christmas-community -p 80:80 --restart always ospfer/venanzi-christmas
 ```
 
 ## Docker Compose
@@ -32,7 +32,7 @@ docker run --detach --name christmas-community -p 80:80 --restart always wingysa
 version: "3"
 services:
   christmas-community:
-    image: wingysam/christmas-community
+    image: ospfer/venanzi-christmas
     volumes:
       - ./data:/data
     ports:
@@ -59,7 +59,7 @@ services:
 ## Install
 
 ```sh
-git clone https://github.com/wingysam/Christmas-Community
+git clone https://github.com/ospfer/Christmas-Community.git
 cd Christmas-Community
 npm install
 ```
